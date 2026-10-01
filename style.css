@@ -100,3 +100,25 @@ button {
 button:hover {
     background-color: #002244; /* Pequeño efecto al pasar el mouse */
 }
+/* --- Flexbox Básico --- */
+.contenedor-galeria {
+    display: flex; /* Usamos flexbox básico */
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+.item {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%; /* Para que los 4 ocupen el mismo ancho */
+    border-radius: 4px;
+}
+
+/* ⚠️ BLOQUE DE CONFLICTO ⚠️ cambiar el color del header a un azul más oscuro. */
+header {
+    background-color: #001a33; 
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
