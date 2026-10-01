@@ -100,28 +100,25 @@ button {
 button:hover {
     background-color: #002244; /* Pequeño efecto al pasar el mouse */
 }
-/* --- Tarea Estudiante B: Responsividad con Media Queries --- */
-@media (max-width: 600px) {
-    /* En pantallas menores a 600px, los elementos se ajustan */
-    
-    /* Hace que las celdas de la tabla se apilen hacia abajo */
-    table, thead, tbody, th, td, tr {
-        display: block; 
-        width: 100%;
-    }
-    
-    /* El formulario ocupa todo el ancho sin salirse de la pantalla */
-    form {
-        width: 100%;
-    }
+/* --- Flexbox Básico --- */
+.contenedor-galeria {
+    display: flex; /* Usamos flexbox básico */
+    gap: 10px; /* Espacio entre los elementos */
 }
 
-/* ⚠️ BLOQUE DE CONFLICTO (Estudiante B) ⚠️ 
-   Al mismo tiempo, el Estudiante B decide cambiar el color del header a negro y hacer el texto más grande. */
+.item {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%; /* Para que los 4 ocupen el mismo ancho */
+    border-radius: 4px;
+}
+
+/* ⚠️ BLOQUE DE CONFLICTO ⚠️ cambiar el color del header a un azul más oscuro. */
 header {
-    background-color: #000000; 
+    background-color: #001a33; 
     color: #FFFFFF;
     text-align: center;
-    padding: 30px;
-    font-size: 24px;
+    padding: 20px;
 }
