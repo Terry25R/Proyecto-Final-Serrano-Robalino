@@ -1,12 +1,13 @@
+# Proyecto Final: Sitio Web de Robotics Panthers
+Materia: GIT
+Estudiantes: Terri Robalino y Pablo Serrano
+
 Generamos dos ramas diferentes, "Pablo y Terry" en ellas editams lo de la rama principal con lo solicitado
 en el proyecto 2, generando intencionalmente un conflictos en las mismas lineas de codigo
 tanto del style como del index, para ello, la rama de Terry se fusiono con la principal, y la 
 rama de Pablo se encargo de resolver el conflicto desde el visual estudio, tomando en cuenta cual es el codigo
 mas viable para la pagina.git 
 
-# Proyecto Final: Sitio Web de Robotics Panthers
-Materia: GIT
-Estudiantes: Terri Robalino y Pablo Serrano
 
 ## 1. Guía de Usuario e Instrucciones de Uso
 Este es un proyecto estático desarrollado con HTML5 y CSS3 sin el uso de JavaScript ni frameworks. 
@@ -18,10 +19,11 @@ Para visualizar la página web:
 
 ## 2. Árbol de Archivos
 La estructura de nuestro proyecto es la siguiente:
+```text
 /
 ├── docs/
 │   └── historial.txt
-├── images/ (opcional, si guardaron imágenes locales)
+├── images/ 
 │   ├── brazo.jpg
 │   ├── carrito.jpg
 │   ├── sensor.jpg
@@ -29,6 +31,7 @@ La estructura de nuestro proyecto es la siguiente:
 ├── index.html
 ├── style.css
 └── README.md
+```
 
 ## 3. Resolución de Conflictos (Taller 2)
 Durante la fase de integración, generamos un conflicto intencional en el archivo `style.css` (o `index.html`).
