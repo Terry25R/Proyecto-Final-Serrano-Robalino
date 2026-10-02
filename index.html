@@ -2,27 +2,38 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robotics Panthers</title>
+    <!-- Enlace al archivo CSS que trabajará el Estudiante B -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Encabezado semántico -->
+
+    <!-- Encabezado principal (Usa el único h1 de la página) -->
     <header>
         <h1>Robotics Panthers</h1>
     </header>
 
     <!-- Barra de navegación semántica -->
     <nav>
+        <a href="#acerca-de">Acerca de</a>
         <a href="#inventario">Inventario</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Únete</a>
     </nav>
 
-    <!-- Contenido principal semántico -->
+    <!-- Contenedor principal de la página -->
     <main>
-        <!-- Sección 1: La Tabla -->
+
+        <!-- SECCIÓN 1: Acerca de Nosotros -->
+        <section id="acerca-de">
+            <h2>Acerca de Nosotros</h2>
+            <p>Somos estudiantes del Instituto Superior Tecnológico Quito Metropolitano apasionados por la innovación. Nos dedicamos a aprender los fundamentos de la programación y la electrónica mediante el trabajo colaborativo.</p>
+        </section>
+
+        <!-- SECCIÓN 2: Tabla (Requisito: 5 filas de datos) -->
         <section id="inventario">
             <h2>Inventario de Componentes</h2>
-            <!-- Tabla con encabezados claros y 5 filas de datos -->
             <table>
                 <thead>
                     <tr>
@@ -41,40 +52,62 @@
             </table>
         </section>
 
-        <!-- Sección 2: El Formulario -->
+        <!-- SECCIÓN 3: Galería/Grid (Requisito: 4 divs, accesibilidad alt y jerarquía h2 -> h3) -->
+<section id="galeria">
+    <h2>Galería de Proyectos</h2>
+    <div class="contenedor-galeria">
+        
+        <div class="item">
+            <h3>Brazo Robótico</h3>
+            <!-- El atributo alt se mantiene para el validador W3C, pero agregamos style para el tamaño responsivo -->
+            <img src="https://static.vecteezy.com/system/resources/previews/001/546/007/non_2x/robotic-arm-icon-cartoon-isolated-free-vector.jpg" alt="Brazo robótico de 3 ejes impreso en 3D" style="max-width: 100%; height: auto;">
+            <!-- Etiqueta <p> añadida para que la descripción siempre sea visible en pantalla -->
+            <p>Brazo robótico de 3 ejes impreso en 3D</p>
+        </div>
+        
+        <div class="item">
+            <h3>Seguidor de Línea</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzZ1eGprK-NkxbASky-_sqL2KzvEAe90n5giiknA7gTJ0Ijhc3WMAchTw&s=10" alt="Robot móvil ensamblado con sensores infrarrojos" style="max-width: 100%; height: auto;">
+            <p>Robot móvil ensamblado con sensores infrarrojos</p>
+        </div>
+        
+        <div class="item">
+            <h3>Sensor de Proximidad</h3>
+            <img src="https://m.media-amazon.com/images/I/61MFFJQJHyS.jpg" alt="Circuito de sensor de proximidad en protoboard" style="max-width: 100%; height: auto;">
+            <p>Circuito de sensor de proximidad en protoboard</p>
+        </div>
+        
+        <div class="item">
+            <h3>Placa Arduino</h3>
+            <img src="https://http2.mlstatic.com/D_NQ_NP_910063-MLA72122613169_102023-O.webp" alt="Placa microcontroladora Arduino conectada" style="max-width: 100%; height: auto;">
+            <p>Placa microcontroladora Arduino conectada</p>
+        </div>
+
+    </div>
+</section>
+
+        <!-- SECCIÓN 4: Formulario estático (Requisito: inputs, textarea, button y labels) -->
         <section id="contacto">
             <h2>Únete al equipo</h2>
-            <!-- Formulario estático con input, textarea y button  --->
             <form action="#" method="get">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                
+                <!-- El 'for' del label debe ser igual al 'id' del input -->
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
 
                 <label for="mensaje">Por qué quieres unirte:</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
+                <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre ti"></textarea>
 
                 <button type="submit">Enviar Solicitud</button>
             </form>
         </section>
+
     </main>
 
     <!-- Pie de página semántico -->
     <footer>
-        <p>Instituto Superior Tecnológico Quito Metropolitano</p>
+        <p>&copy; 2026 Club de Robótica - Instituto Superior Tecnológico Quito Metropolitano</p>
     </footer>
-<!-- Sección Acerca de (Estudiante B) -->
-        <section id="acerca-de">
-            <h2>Acerca de Nosotros</h2>
-            <p>Somos un equipo dedicado a aprender los fundamentos de la programación y la electrónica mediante el trabajo colaborativo.</p>
-    <!-- Sección de Galería (Estudiante A) -->
-        <section id="galeria">
-            <h2>Galería de Proyectos</h2>
-            <div class="contenedor-galeria">
-                <div class="item">Brazo Robótico</div>
-                <div class="item">Seguidor de Línea</div>
-                <div class="item">Sensor de Proximidad</div>
-                <div class="item">Placa Arduino</div>
-            </div>
-        </section>
-</body>
 
+</body>
 </html>
